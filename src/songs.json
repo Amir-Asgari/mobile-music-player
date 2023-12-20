@@ -1,0 +1,38 @@
+{
+    "playlists": [
+        {
+            "name": "Playlist 1",
+            "songs": [
+                {
+                    "title": "Song 1",
+                    "artist": "Artist 1",
+                    "url": "https://dls.music-fa.com/tagdl/1402/Yousef%20Zamani%20-%20Vala%20Magham%20(320).mp3",
+                    "image": "https://music-fa.com/wp-content/uploads/2023/12/Yousef-Zamani-Vala-Magham-Music-fa.com_.jpg"
+                },
+                {
+                    "title": "Song 2",
+                    "artist": "Artist 1",
+                    "url": "https://dl.dibasmusic.com/music/02/09/Zia%20Atabay%20-%20Ahay%20SIahe%20Zangi%20Delamo%20Nakon%20Khon%20-%20128.mp3",
+                    "image": "https://music-fa.com/wp-content/uploads/2023/12/Jamal-Jamalo-Music-fa.com_.jpg"
+                }
+            ]
+        },
+        {
+            "name": "Playlist 2",
+            "songs": [
+                {
+                    "title": "Song 3",
+                    "artist": "Artist 1",
+                    "url": "link_to_song1",
+                    "image": "https://music-fa.com/wp-content/uploads/2023/12/Yousef-Zamani-Vala-Magham-Music-fa.com_.jpg"
+                },
+                {
+                    "title": "Song 4",
+                    "artist": "Artist 1",
+                    "url": "link_to_song1",
+                    "image": "link_to_image1"
+                }
+            ]
+        }
+    ]
+}
