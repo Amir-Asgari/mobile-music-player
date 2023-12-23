@@ -6,7 +6,7 @@ self.addEventListener('install', (event) => {
       return cache.addAll([
         '/',
         '/index.html',
-        '/music-icon',
+        '/icon.png',
         '/manifest.json',
         // ... افزودن مسیرهای دیگر به cache
       ]);
