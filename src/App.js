@@ -4,6 +4,7 @@ import Player from './Player';
 import './App.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import AdvertisingBox from './componnets/AdvertisingBox/AdvertisingBox';
 
 import albumsData from './songs.json';
 // import '../public/service-worker'
@@ -12,9 +13,9 @@ function App({sliderData}) {
   const [playlist, setPlayList] = useState()
   
   // if (!Array.isArray(sliderData) || sliderData.length <= 0) {
-  //   return null;
-  // }
-
+    //   return null;
+    // }
+    
 const GalleryPrevArrow = ({ currentSlide, slideCount, ...props }) => {
   const { className, onClick } = props;
 
@@ -77,7 +78,8 @@ const sliderSettings = {
       <div>
         <p>آهنگ های شاد عروسی</p>
       </div>
-      <Player selectedAlbum={playlist} />
+    <AdvertisingBox/>
+      {/* <Player selectedAlbum={playlist} /> */}
       <Slider {...sliderSettings} className="albums-list">
      { albumsData.playlists.map((list) => (
         <div key={list.name} className="album-item">
