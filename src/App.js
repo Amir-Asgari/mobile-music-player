@@ -8,7 +8,7 @@ import AdvertisingBox from "./componets/AdvertisingBox/AdvertisingBox";
 import { BrowserRouter as Router, Route, Switch , Routes, BrowserRouter } from "react-router-dom";
 import AlbumList from "./componets/Album/AlbumList";
 import albumsData from "./songs.json";
-import '../public/service-worker'
+// import './service-worker'
 
 function App({ sliderData }) {
   const [playlist, setPlayList] = useState();
