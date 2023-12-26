@@ -1,7 +1,7 @@
 import React from 'react';
 import H5AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
-import songsData from '../songs.json';
+import songsData from '../../songs.json';
 import './SongSlider.css';
 
 const SongSlider = () => {

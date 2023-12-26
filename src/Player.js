@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AudioPlayer from 'react-audio-player';
 import songsData from './songs.json';
 import './Player.css'
-import SongSlider from './componets/SongSlider';
+import SongSlider from './componets/songSlider/SongSlider';
 
 const Player = ({selectedAlbum}) => {
       const { playlists } = songsData;

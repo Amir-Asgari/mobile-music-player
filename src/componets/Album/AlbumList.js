@@ -1,27 +1,31 @@
 // AlbumList.js
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import SongSlider from "../songSlider/SongSlider";
+import Player from "../../Player";
+import Slider from "react-slick";
+
 
 const AlbumList = ({ albums }) => {
   // console.log(albums.playlists);
+  
   return (
-    <div>
-      {
-        albums.playlists.map((album,index) => (
-          <Link to={`/album/${album.id}`} key={index}>
-          <div>
-            <img src={album.image} alt={album.imageAlt} />
-            <h3>{album.name}</h3>
-          </div>
-        </Link>
-      ))}
-
-    </div>
+    <Slider>
+      <div>
+        {albums.playlists.map((album, index) => (
+          <Link to={`/album/${album.songs}`} key={index}>
+            <div>
+              <img src={album.image} alt={album.imageAlt} />
+              <h3>{album.name}</h3>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </Slider>
   );
 };
 
 export default AlbumList;
-
 
 // import React from 'react';
 // import Player from '../../Player';
