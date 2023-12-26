@@ -22,11 +22,12 @@ body {
   
   img {
     display: flex;
-    max-width: 60%;
+    max-width: 330%;
     height: auto;
     margin: 10px 0;
     justify-content: center;
     text-align: center;
+    align-items: center;
   }
   
   button {

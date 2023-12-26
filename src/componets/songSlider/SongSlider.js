@@ -18,12 +18,7 @@ const SongSlider = () => {
     };
 
     return (
-        <div>
-            <H5AudioPlayer
-                autoPlay
-                src={songs[currentSong].url}
-                onEnded={nextSong}
-            />
+        <div >
             <h2>{songs[currentSong].title}</h2>
             <h3>{songs[currentSong].artist}</h3>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -31,6 +26,11 @@ const SongSlider = () => {
                     style={{ width: "50%", display: "flex", justifyContent: "center", borderRadius: "50%" }}
                     src={songs[currentSong].image} alt={songs[currentSong].artist} />
             </div >
+            <H5AudioPlayer
+                autoPlay
+                src={songs[currentSong].url}
+                onEnded={nextSong}
+            />
             <div className="controls">
                 <button onClick={prevSong}>قبلی</button>
                 <button onClick={nextSong}>بعدی</button>
