@@ -6,19 +6,19 @@
 .albums-list {
   height: 250px;
   display: flex;
-  overflow-x: hidden; /* تغییر از auto به hidden برای جلوگیری از نمایش اسکرول دوباره */
+  overflow-x: hidden; 
 }
 
 /* استایل هر آلبوم در لیست */
 .album-item {
-  margin-right: 20px; /* فاصله بین آلبوم‌ها */
+  margin-right: 20px; 
 }
 
 /* استایل تصاویر آلبوم */
 .album-image {
-  width: 150px; /* عرض تصاویر آلبوم */
-  height: 150px; /* ارتفاع تصاویر آلبوم */
+  width: 150px; 
+  height: 150px; 
   object-fit: cover; /* تصاویر به صورت کاور نمایش داده شوند */
-  border-radius: 10px; /* گوشه‌های گرد تصاویر آلبوم */
+  border-radius: 10px; 
 }
 
