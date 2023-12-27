@@ -1,13 +1,17 @@
+.body{
+  background-color: rgba(0, 0, 0, 0.833);
+height: max-content;
+}
 .AdvertisingBox{
-    border-radius: "10px";
-    display: "flex";
-    align-items: "center";
-    justify-content: "center";
-    text-align: "center";
-    width: 100%;
+    display: flex;
+    width: auto;
+    /* align-items: center; */
+    justify-content: center;
+    /* text-align: center; */
+    margin: 20px;
 }
 
 .Sliders{
     margin-top: 0;
-    background-color: rgba(83, 83, 83, 0.511);
+    background-color: rgba(33, 33, 33, 0.511);
 }

@@ -8,7 +8,7 @@ import Sliders from "./Sliders/Sliders";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="body">
       <div className="AdvertisingBox">
         <AdvertisingBox />
       </div>

@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import AudioPlayer from 'react-audio-player';
+import React from 'react';
 import songsData from './songs.json';
 import './Player.css'
 import SongSlider from './componets/songSlider/SongSlider';

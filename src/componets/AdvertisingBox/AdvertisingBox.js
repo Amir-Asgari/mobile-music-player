@@ -10,9 +10,8 @@ const AdvertisingBox = () => {
         // alignItems: "center",
         // justifyContent: "center",
       }}
-      className=" w-6"
     >
-      <img style={{width:'300%' ,Display:'flex'}}
+      <img style={{borderRadius:'20px' , width:'300%'}}
       alt="AdvertisingBox"
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzGlMBiyzWnF2a_Td0IuE-hGfjTzmC0VJwQA&usqp=CAU"
       />
