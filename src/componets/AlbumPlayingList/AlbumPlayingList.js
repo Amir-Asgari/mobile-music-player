@@ -4,8 +4,7 @@ import Player from '../../Player'
 const AlbumPlayingList = () => {
   return (
     <div>
-      AlbumPlayingList
-      <Player   />
+      <Player  />
 
     </div>
   )

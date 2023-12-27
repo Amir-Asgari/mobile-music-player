@@ -48,18 +48,5 @@ body {
     background-color: #2980b9;
   }
   
-  .dance {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-  }
-  
-  .dance img {
-    width: 450px;
-    height: 100px;
-    justify-content: center;
-    
-  }
   
   

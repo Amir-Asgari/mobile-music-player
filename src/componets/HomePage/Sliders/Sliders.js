@@ -56,9 +56,9 @@ const Sliders = ({ sliderData }) => {
 
   return (
     <Slider {...settings}>
-      {sliderData.map((album, index) => (
-        <div key={index}>
-            <Link to={`/album/${album.songs}`} key={index}>
+      {sliderData.map((album, id) => (
+        <div key={id}>
+            <Link to={`/album/${album.id}`} key={id}>
               <div>
                 <img
                   src={album.image}

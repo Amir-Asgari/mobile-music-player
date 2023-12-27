@@ -4,10 +4,9 @@ height: max-content;
 }
 .AdvertisingBox{
     display: flex;
-    width: auto;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
-    /* text-align: center; */
+    text-align: center;
     margin: 20px;
 }
 
