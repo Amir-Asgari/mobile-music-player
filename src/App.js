@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import Slider from "react-slick";
-import Player from "./Player";
+import React from "react";
 import "./App.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -17,9 +15,7 @@ import HomePage from "./componets/HomePage/HomePage";
 import AlbumPlayingList from "./componets/AlbumPlayingList/AlbumPlayingList";
 // import './service-worker'
 
-function App({ sliderData }) {
-  const [playlist, setPlayList] = useState();
-
+function App() {
   return (
     <div>
       <BrowserRouter>

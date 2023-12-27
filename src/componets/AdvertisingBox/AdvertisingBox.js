@@ -13,6 +13,7 @@ const AdvertisingBox = () => {
       className=" w-6"
     >
       <img style={{width:'300%' ,Display:'flex'}}
+      alt="AdvertisingBox"
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzGlMBiyzWnF2a_Td0IuE-hGfjTzmC0VJwQA&usqp=CAU"
       />
     </div>

@@ -1,0 +1,13 @@
+.AdvertisingBox{
+    border-radius: "10px";
+    display: "flex";
+    align-items: "center";
+    justify-content: "center";
+    text-align: "center";
+    width: 100%;
+}
+
+.Sliders{
+    margin-top: 0;
+    background-color: rgba(83, 83, 83, 0.511);
+}
