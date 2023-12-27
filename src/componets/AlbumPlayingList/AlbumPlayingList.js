@@ -5,12 +5,6 @@ const AlbumPlayingList = () => {
   return (
     <div>
       <Player  />
-      <p>alakiiiiiiiiii</p>
-      <p>alakiiiiiiiiii</p>
-      <p>alakiiiiiiiiii</p>
-      <p>alakiiiiiiiiii</p>
-      <p>alakiiiiiiiiii</p>
-      <p>alakiiiiiiiiii</p>
     </div>
   )
 }
