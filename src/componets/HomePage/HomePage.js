@@ -4,7 +4,7 @@ import albumsData from "../../songs.json";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./HomePage.css";
-import Sliders from "./Sliders/Sliders";
+import Sliders from "../Sliders/Sliders";
 
 const HomePage = () => {
   return (
