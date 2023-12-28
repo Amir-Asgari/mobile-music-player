@@ -1,24 +1,24 @@
-import React from 'react'
+import React from "react";
+import LikeButton from "../MUI/LikeButton/LikeButton";
+import "./AlbumList.css";
 
-import LikeButton from '../MUI/LikeButton/LikeButton';
-
-const AlbumList = ({image , title , artist}) => {
+const AlbumList = ({ image, title, artist }) => {
   return (
-    <li>
-     <div>
-      <div>
-        <img src={image}/>
+    <li className="li">
+      <div className="container">
+        <div className="imageStyle">
+          <img src={image} />
+        </div>
+        <div className="nameStyle">
+          <h3>{title}</h3>
+          <h4>{artist}</h4>
+        </div>
       </div>
-      <div>
-        <h3>{title}</h3>
-        <h4>{artist}</h4>
+      <div className="likeButton">
+        <LikeButton />
       </div>
-     </div>
-     <div>
-      <LikeButton/>
-     </div>
-     </li>
-  )
-}
+    </li>
+  );
+};
 
-export default AlbumList
+export default AlbumList;

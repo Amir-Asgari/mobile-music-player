@@ -4,8 +4,8 @@ import './Player.css'
 import SongSlider from './componets/songSlider/SongSlider';
 
 const Player = ({selectedAlbum}) => {
-      const { playlists } = songsData;
-    const songs = playlists[0].songs;
+    //   const { playlists } = songsData;
+    // const songs = playlists[0].songs;
 
     return (
         <div>
