@@ -13,7 +13,7 @@ import albumsData from "./songs.json";
 import HomePage from "./componets/HomePage/HomePage";
 import AlbumPlayingList from "./componets/AlbumPlayingList/AlbumPlayingList";
 // import './service-worker'
-
+function App() {
   return (
     <div>
       <BrowserRouter>
@@ -25,7 +25,7 @@ import AlbumPlayingList from "./componets/AlbumPlayingList/AlbumPlayingList";
         </Routes>
       </BrowserRouter>
     </div>
-  );
+  )
 }
 
 export default App;
