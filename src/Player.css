@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #363535;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -22,11 +22,12 @@ body {
   
   img {
     display: flex;
-    max-width: 60%;
+    max-width: 100%;
     height: auto;
     margin: 10px 0;
     justify-content: center;
     text-align: center;
+    align-items: center;
   }
   
   button {
@@ -47,18 +48,5 @@ body {
     background-color: #2980b9;
   }
   
-  .dance {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-  }
-  
-  .dance img {
-    width: 450px;
-    height: 100px;
-    justify-content: center;
-    
-  }
   
   
