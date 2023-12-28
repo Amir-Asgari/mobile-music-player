@@ -24,8 +24,8 @@ const SongSlider = () => {
                 src={songs[currentSong].url}
                 onEnded={nextSong}
             />
-            <h1>{songs[currentSong].title}</h1>
-            <h2>{songs[currentSong].artist}</h2>
+            <h2>{songs[currentSong].title}</h2>
+            <h3>{songs[currentSong].artist}</h3>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <img
                     style={{ width: "50%", display: "flex", justifyContent: "center", borderRadius: "50%" }}
