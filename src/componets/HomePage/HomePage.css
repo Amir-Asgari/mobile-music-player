@@ -3,11 +3,11 @@
 height: max-content;
 }
 .AdvertisingBox{
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 20px;
+    /* margin:  50px; */
 }
 
 .Sliders{
