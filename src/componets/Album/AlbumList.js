@@ -1,13 +1,13 @@
 import React from 'react'
-import IconButton from "@mui/material/IconButton";
-import FavoriteIcon from "@mui/icons-material/Favorite";
 
-const AlbumList = () => {
+import LikeButton from '../MUI/LikeButton/LikeButton';
+
+const AlbumList = ({image , title , artist}) => {
   return (
-    <div>
+    <li>
      <div>
       <div>
-        <image src={image}/>
+        <img src={image}/>
       </div>
       <div>
         <h3>{title}</h3>
@@ -15,9 +15,9 @@ const AlbumList = () => {
       </div>
      </div>
      <div>
-
+      <LikeButton/>
      </div>
-     </div>
+     </li>
   )
 }
 

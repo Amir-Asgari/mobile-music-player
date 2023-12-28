@@ -4,6 +4,7 @@ import H5AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import songsData from "../../songs.json";
 import "./SongSlider.css";
+import AlbumList from "../Album/AlbumList";
 
 const SongSlider = () => {
   const { id } = useParams();
@@ -53,10 +54,12 @@ const SongSlider = () => {
         <h4>آلبوم‌های در حال پخش:</h4>
         <ul>
           {songs.map((playlist, index) => (
-            <div  key={index}>
-            <li>{playlist.title}</li>
-            <li ><img  src={playlist.image}/></li>
-            </div>
+            <AlbumList
+              key={index}
+              title={playlist.title}
+              image={playlist.image}
+              artist={playlist.artist}
+            />
           ))}
         </ul>
       </div>
