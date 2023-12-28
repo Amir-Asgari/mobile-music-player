@@ -25,19 +25,38 @@ const SongSlider = () => {
   console.log({ songs });
   return (
     <div>
-      <h2>{songs[currentSong].title}</h2>
-      <h3>{songs[currentSong].artist}</h3>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <img
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
+          textAlign: "center",
+          margin: "20px",
+          // marginRight:'40px'
+        }}
+      >
+        <div
           style={{
-            width: "45%",
             display: "flex",
             justifyContent: "center",
-            borderRadius: "50%",
+            alignItems: "center",
           }}
-          src={songs[currentSong].image}
-          alt={songs[currentSong].artist}
-        />
+        >
+          <img
+            style={{
+              width: "45%",
+              display: "flex",
+              justifyContent: "center",
+              borderRadius: "50%",
+              textAlign: "center",
+              alignContent: "center",
+            }}
+            src={songs[currentSong].image}
+            alt={songs[currentSong].artist}
+          />
+        </div>
+        <h1>{songs[currentSong].title}</h1>
+        <h2>{songs[currentSong].artist}</h2>
       </div>
       <H5AudioPlayer
         autoPlay
@@ -49,9 +68,9 @@ const SongSlider = () => {
         // showJumpControls={true}
       />
 
-      <div style={{ color: "white", fontSize: "50px" }}>آلبوم </div>
+      {/* <div style={{ color: "white", fontSize: "50px" }}>آلبوم </div> */}
       <div style={{ color: "white", fontSize: "20px", marginTop: "20px" }}>
-        <h4>آلبوم‌های در حال پخش:</h4>
+        {/* <h4>آلبوم‌های در حال پخش:</h4> */}
         <ul>
           {songs.map((playlist, index) => (
             <AlbumList
