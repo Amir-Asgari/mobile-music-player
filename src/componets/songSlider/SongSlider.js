@@ -82,10 +82,6 @@ const SongSlider = () => {
           ))}
         </ul>
       </div>
-
-      <div style={{ color: "white", fontSize: "50px", marginTop: "20px" }}>
-        آلبوم {currentSong}
-      </div>
     </div>
   );
 };
