@@ -12,10 +12,13 @@ import AlbumList from "./componets/Album/AlbumList";
 import albumsData from "./songs.json";
 import HomePage from "./componets/HomePage/HomePage";
 import AlbumPlayingList from "./componets/AlbumPlayingList/AlbumPlayingList";
+import BottomAppBar from "./componets/AppBar/AppBar";
 // import './service-worker'
+
 function App() {
   return (
     <div>
+      <BottomAppBar/>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
