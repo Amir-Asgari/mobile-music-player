@@ -11,7 +11,8 @@ import SvgIcon from "@mui/material/SvgIcon";
 import QueueMusicRoundedIcon from "@mui/icons-material/QueueMusicRounded";
 import PersonOutlineRoundedIcon from "@mui/icons-material/PersonOutlineRounded";
 import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
-import {Outlet, Link } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
+import { Button } from "@mui/material";
 
 const StyledFab = styled(Fab)({
   position: "absolute",
@@ -46,39 +47,40 @@ export default function BottomAppBar() {
         }}
       >
         <nav>
-        <Toolbar>
-          <IconButton color="inherit" aria-label="open drawer">
-            <PersonOutlineRoundedIcon sx={{ fontSize: 100 }} />
-          </IconButton>
-          <Box sx={{ flexGrow: 1 }} />
-
-          <IconButton color="inherit" aria-label="open drawer">
-            <QueueMusicRoundedIcon sx={{ fontSize: 100 }} />
-          </IconButton>
-          <Box sx={{ flexGrow: 1 }} />
-
-            <IconButton
-              style={{ width: "250px", height: "150px" }}
-              color="inherit"
-              aria-label="add"
-              // LinkComponent={HomePage}
-              // to='/HomePage'
-            >
-              <HomeIcon sx={{ fontSize: 110 }} />
+          <Toolbar>
+            <IconButton color="inherit" aria-label="open drawer">
+              <PersonOutlineRoundedIcon sx={{ fontSize: 100 }} />
             </IconButton>
             <Box sx={{ flexGrow: 1 }} />
-          <IconButton color="inherit">
-            <SearchIcon sx={{ fontSize: 100 }} />
-          </IconButton>
-          <Box sx={{ flexGrow: 1 }} />
 
-          <IconButton color="inherit">
-            <DownloadRoundedIcon sx={{ fontSize: 100 }} />
-          </IconButton>
-          <Box sx={{ flexGrow: 1 }} />
-        </Toolbar>
+            <IconButton color="inherit" aria-label="open drawer">
+              <QueueMusicRoundedIcon sx={{ fontSize: 100 }} />
+            </IconButton>
+            <Box sx={{ flexGrow: 1 }} />
+
+
+              <IconButton
+                style={{ width: "250px", height: "150px" }}
+                color="inherit"
+                aria-label="add"
+                
+              >
+                <HomeIcon sx={{ fontSize: 110 }} />
+              </IconButton>
+
+            <Box sx={{ flexGrow: 1 }} />
+                {/* <Link to='/'>home</Link> */}
+            <IconButton color="inherit">
+              <SearchIcon sx={{ fontSize: 100 }} />
+            </IconButton>
+            <Box sx={{ flexGrow: 1 }} />
+
+            <IconButton color="inherit">
+              <DownloadRoundedIcon sx={{ fontSize: 100 }} />
+            </IconButton>
+            <Box sx={{ flexGrow: 1 }} />
+          </Toolbar>
         </nav>
-        <Outlet/>
       </AppBar>
     </React.Fragment>
   );
