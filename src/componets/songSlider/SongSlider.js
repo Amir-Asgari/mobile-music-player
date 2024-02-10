@@ -1,21 +1,18 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import H5AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
+import songsData from "../../songs.json";
 import "./SongSlider.css";
 import AlbumList from "../Album/AlbumList";
 
-const SongSlider = ({ selectedAlbum }) => {
+const SongSlider = () => {
   const { id } = useParams();
-  const [songs, setSongs] = React.useState([]);
+  const { playlists } = songsData;
+  const songs = playlists.find((playlist) => playlist.id === id)?.songs || [];
   const [currentSong, setCurrentSong] = React.useState(0);
 
-  useEffect(() => {
-    const album = selectedAlbum.playlists.find((playlist) => playlist.id === id);
-    if (album) {
-      setSongs(album.songs);
-    }
-  }, [selectedAlbum, id]);
+  console.log(songs);
 
   const nextSong = () => {
     setCurrentSong((prevSong) => (prevSong + 1) % songs.length);
@@ -25,10 +22,7 @@ const SongSlider = ({ selectedAlbum }) => {
     setCurrentSong((prevSong) => (prevSong - 1 + songs.length) % songs.length);
   };
 
-  if (!songs.length) {
-    return <div>Loading...</div>;
-  }
-
+  console.log({ songs });
   return (
     <div>
       <div
@@ -38,6 +32,7 @@ const SongSlider = ({ selectedAlbum }) => {
           flexDirection: "column",
           textAlign: "center",
           margin: "20px",
+          // marginRight:'40px'
         }}
       >
         <div
@@ -70,9 +65,12 @@ const SongSlider = ({ selectedAlbum }) => {
         showSkipControls={true}
         onClickPrevious={prevSong}
         onClickNext={nextSong}
+        // showJumpControls={true}
       />
 
+      {/* <div style={{ color: "white", fontSize: "50px" }}>آلبوم </div> */}
       <div style={{ color: "white", fontSize: "20px", marginTop: "20px" }}>
+        {/* <h4>آلبوم‌های در حال پخش:</h4> */}
         <ul>
           {songs.map((playlist, index) => (
             <AlbumList
@@ -83,6 +81,10 @@ const SongSlider = ({ selectedAlbum }) => {
             />
           ))}
         </ul>
+      </div>
+
+      <div style={{ color: "white", fontSize: "50px", marginTop: "20px" }}>
+        آلبوم {currentSong}
       </div>
     </div>
   );

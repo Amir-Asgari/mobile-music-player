@@ -13,18 +13,20 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route  path="/HomePage" component={HomePage} />
+          <Route exact path="/HomePage" component={HomePage} />
           <Route
-            
+            exact
             path="/album"
-            render={(props) => <AlbumList {...props} albums={albumsData} />}
+            component={AlbumList}
+            // render={(props) => <AlbumList {...props} albums={albumsData} />}
           />
           <Route
-            
+            exact
             path="/album/:id"
-            render={(props) => (
-              <AlbumPlayingList {...props} selectedAlbum={albumsData} />
-            )}
+            component={AlbumPlayingList}
+            // render={(props) => (
+            //   <AlbumPlayingList {...props} albums={albumsData} />
+            // )}
           />
         </Switch>
       </Router>

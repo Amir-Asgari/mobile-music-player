@@ -1,10 +1,11 @@
 import React from 'react'
-import Player from '../../Player'
+// import Player from '../../Player'
+import SongSlider from '../songSlider/SongSlider'
 
 const AlbumPlayingList = ({ selectedAlbum }) => {
   return (
     <div>
-      <Player selectedAlbum={selectedAlbum} />
+      <SongSlider selectedAlbum={selectedAlbum} />
     </div>
   )
 }

@@ -24,12 +24,15 @@
   margin-left: 100px;
   justify-content: center;
   align-items: center;
+  color: black;
 }
 .likeButton {
+  display: flex;
   width: 50px;
   text-decoration: none;
   justify-content: center;
   align-items: center;
-  margin-top: 6%;
-  margin-right: 8%;
+  align-content: center;
+  /* margin-top: 6%; */
+  margin-right: 30px;
 }

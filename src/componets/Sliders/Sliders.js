@@ -6,11 +6,12 @@ import "./Sliders.css";
 
 const Sliders = ({ sliderData }) => {
   if (!Array.isArray(sliderData) || sliderData.length <= 0) {
+    console.log("there no song in Sliders");
     return null;
   }
 
   const GalleryPrevArrow = ({ currentSlide, slideCount, ...props }) => {
-    const {  onClick } = props;
+    const { onClick } = props;
 
     return (
       <div {...props} className="custom-prevArrow" onClick={onClick}>
@@ -26,7 +27,7 @@ const Sliders = ({ sliderData }) => {
     );
   };
   const GalleryNextArrow = ({ currentSlide, slideCount, ...props }) => {
-    const {  onClick } = props;
+    const { onClick } = props;
 
     return (
       <div {...props} className="custom-nextArrow" onClick={onClick}>
@@ -58,16 +59,16 @@ const Sliders = ({ sliderData }) => {
     <Slider {...settings}>
       {sliderData.map((album, id) => (
         <div key={id}>
-            <Link to={`/album/${album.id}`} key={id}>
-              <div>
-                <img
-                style={{width:'200px'}}
-                  src={album.image}
-                  alt={album.imageAlt}
-                />
-                <h3>{album.name}</h3>
-              </div>
-            </Link>
+          <Link to={`/album/${album.id}`} key={id}>
+            <div>
+              <img
+                style={{ width: "200px" }}
+                src={album.image}
+                alt={album.imageAlt}
+              />
+              <h3>{album.name}</h3>
+            </div>
+          </Link>
         </div>
       ))}
     </Slider>

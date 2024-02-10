@@ -7,7 +7,7 @@ const AlbumList = ({ image, title, artist }) => {
     <li className="li">
       <div className="container">
         <div className="imageStyle">
-          <img src={image} />
+          <img src={image} alt="image"/>
         </div>
         <div className="nameStyle">
           <h3>{title}</h3>
