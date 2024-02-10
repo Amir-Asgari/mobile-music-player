@@ -1,6 +1,6 @@
 {
 "name": "The name of your application",
-"short_name": "This name will show in your Windows taskbar, in the start menu, and Android homescreen",
+"short_name": "This name will show in your Windows taskbar, in the start menu, and Android homeScreen",
 "start_url": "The URL that should be loaded when your application is opened",
 "display": "standalone",
 "description": "A description for your application",
@@ -34,7 +34,7 @@
 "related_applications": [
     {
         "platform":"windows",
-        "url": " The URL to your app in that app store"
+        "url": "https://www.myAppNameInAppStore.com"
     }
 ],
 "prefer_related_applications": false,

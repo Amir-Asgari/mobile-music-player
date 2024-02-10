@@ -1,10 +1,10 @@
 import React from 'react'
 import Player from '../../Player'
 
-const AlbumPlayingList = () => {
+const AlbumPlayingList = ({ selectedAlbum }) => {
   return (
     <div>
-      <Player  />
+      <Player selectedAlbum={selectedAlbum} />
     </div>
   )
 }

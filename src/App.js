@@ -1,11 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AlbumList from "./componets/Album/AlbumList";
 import albumsData from "./songs.json";
 import HomePage from "./componets/HomePage/HomePage";
 import AlbumPlayingList from "./componets/AlbumPlayingList/AlbumPlayingList";
 import BottomAppBar from "./componets/AppBar/AppBar";
-import { Switch } from "react-router-dom/cjs/react-router-dom.min";
 
 function App() {
   return (
@@ -13,10 +12,20 @@ function App() {
       <BottomAppBar />
       <Router>
         <Switch>
-          <Route path="/" component={HomePage} />
-          <Route path="/HomePage" component={HomePage} />
-          <Route path="/album" render={() => <AlbumList albums={albumsData} />} />
-          <Route path="/album/:id" component={AlbumPlayingList} />
+          <Route exact path="/" component={HomePage} />
+          <Route  path="/HomePage" component={HomePage} />
+          <Route
+            
+            path="/album"
+            render={(props) => <AlbumList {...props} albums={albumsData} />}
+          />
+          <Route
+            
+            path="/album/:id"
+            render={(props) => (
+              <AlbumPlayingList {...props} selectedAlbum={albumsData} />
+            )}
+          />
         </Switch>
       </Router>
     </div>
