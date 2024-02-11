@@ -10,8 +10,8 @@ const AlbumList = ({ image, title, artist }) => {
           <img src={image} alt="image"/>
         </div>
         <div className="nameStyle">
-          <h3>{title}</h3>
-          <h4>{artist}</h4>
+          <h4 style={{color:'red', fontSize:'26px'}}>{title}</h4>
+          <h4 style={{color:'red', fontSize:'26px'}}>{artist}</h4>
         </div>
       </div>
       <div className="likeButton">

@@ -13,7 +13,7 @@ const LikeButton = () => {
     // const redColor = red[50]
   return (
     <div >
-        <IconButton  onClick={handleClickLike} color={liked? 'error': '#000'}>
+        <IconButton  onClick={handleClickLike} color={!liked? 'error': '#000'}>
             <FavoriteIcon style={{height:'50px', width:'50px'}}/>
         </IconButton>
     </div>

@@ -55,8 +55,8 @@ const SongSlider = () => {
             alt={songs[currentSong].artist}
           />
         </div>
-        <h1>{songs[currentSong].title}</h1>
-        <h2>{songs[currentSong].artist}</h2>
+        <h1 style={{color:'red', fontSize:'36px'}}>{songs[currentSong].title}</h1>
+        <h2 style={{color:'red', fontSize:'36px'}}>{songs[currentSong].artist}</h2>
       </div>
       <H5AudioPlayer
         autoPlay
@@ -69,8 +69,8 @@ const SongSlider = () => {
       />
 
       {/* <div style={{ color: "white", fontSize: "50px" }}>آلبوم </div> */}
-      <div style={{ color: "white", fontSize: "20px", marginTop: "20px" }}>
-        {/* <h4>آلبوم‌های در حال پخش:</h4> */}
+      <div style={{ color: "red", fontSize: "20px", marginTop: "20px" }}>
+        <h4 style={{ color: "red", fontSize: "24px" , display:'flex', flexDirection : 'column' , alignItems:'flex-end' }}> : آهنگ های در حال پخش</h4>
         <ul>
           {songs.map((playlist, index) => (
             <AlbumList
