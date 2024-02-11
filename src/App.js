@@ -9,8 +9,8 @@ import BottomAppBar from "./componets/AppBar/AppBar";
 function App() {
   return (
     <div>
-      <BottomAppBar />
       <Router>
+      <BottomAppBar />
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/HomePage" component={HomePage} />

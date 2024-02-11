@@ -48,36 +48,45 @@ export default function BottomAppBar() {
       >
         <nav>
           <Toolbar>
-            <IconButton color="inherit" aria-label="open drawer">
+          <Link to='/myMusicFy'>
+            <IconButton color="inherit" aria-label="open drawer" style={{display:"flex" , flexDirection:'column'}}>
               <PersonOutlineRoundedIcon sx={{ fontSize: 100 }} />
+              <div>موزیکفای من</div>
             </IconButton>
+            </Link>
             <Box sx={{ flexGrow: 1 }} />
+            <Link to='/playLists'>
 
-            <IconButton color="inherit" aria-label="open drawer">
+            <IconButton color="inherit" aria-label="open drawer" style={{display:"flex" , flexDirection:'column'}}>
               <QueueMusicRoundedIcon sx={{ fontSize: 100 }} />
+              <div>پلی لیست ها</div>
             </IconButton>
+            </Link>
             <Box sx={{ flexGrow: 1 }} />
-
-
+            <Link to='/homePage'>
               <IconButton
-                style={{ width: "250px", height: "150px" }}
+                style={{ width: "250px", height: "150px" , display:"flex" , flexDirection:'column' }}
                 color="inherit"
                 aria-label="add"
-                
               >
-                <HomeIcon sx={{ fontSize: 110 }} />
+                <HomeIcon  sx={{ fontSize: 110 }} />
+                <div>خانه</div>
               </IconButton>
-
+              </Link>
             <Box sx={{ flexGrow: 1 }} />
-                {/* <Link to='/'>home</Link> */}
-            <IconButton color="inherit">
+                <Link to='/search'>
+                <IconButton color="inherit" style={{display:"flex" , flexDirection:'column'}}>
               <SearchIcon sx={{ fontSize: 100 }} />
+              <div>جستجو</div>
             </IconButton>
+            </Link>
             <Box sx={{ flexGrow: 1 }} />
-
-            <IconButton color="inherit">
+            <Link to='/downloads'>
+            <IconButton color="inherit" style={{display:"flex" , flexDirection:'column'}}>
               <DownloadRoundedIcon sx={{ fontSize: 100 }} />
+              <div>دانلودها</div>
             </IconButton>
+            </Link>
             <Box sx={{ flexGrow: 1 }} />
           </Toolbar>
         </nav>
