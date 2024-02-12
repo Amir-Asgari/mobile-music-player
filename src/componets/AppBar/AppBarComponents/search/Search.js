@@ -10,7 +10,6 @@ const Search = () => {
   const [currentSongIndex, setCurrentSongIndex] = useState(-1); // Index of currently playing song
   const [currentSong, setCurrentSong] = React.useState(0);
 
-
   const handleSearch = (event) => {
     const term = event.target.value;
     setSearchTerm(term);
@@ -75,6 +74,7 @@ const Search = () => {
                 style={{
                   display: "flex",
                   bottom: "150",
+                  left:'0',
                   position: "fixed",
                   width: "100% ",
                 }}
@@ -120,16 +120,27 @@ const Search = () => {
                     <h2>{song.artist}</h2>
                   </div>
                 </div> */}
-                <H5AudioPlayer
-                  autoPlay
-                  src={song.url}
-                  showJumpControls={false}
-                  layout="stacked"
-                  // onEnded={nextSong}
-                  showSkipControls={true}
-                  // onClickPrevious={prevSong}
-                  // onClickNext={nextSong}
-                />
+                {/* <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: "100%",
+                    marginRight: "0",
+                    paddingLeft: "0",
+                  }}
+                > */}
+                  <H5AudioPlayer
+                    autoPlay
+                    src={song.url}
+                    showJumpControls={false}
+                    layout="stacked"
+                    // onEnded={nextSong}
+                    showSkipControls={true}
+                    // onClickPrevious={prevSong}
+                    // onClickNext={nextSong}
+                  />
+                {/* </div> */}
               </div>
             )}
             {/* {index===currentSongIndex && (
