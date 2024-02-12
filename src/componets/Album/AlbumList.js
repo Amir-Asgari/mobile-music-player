@@ -2,9 +2,9 @@ import React from "react";
 import LikeButton from "../MUI/LikeButton/LikeButton";
 import "./AlbumList.css";
 
-const AlbumList = ({ image, title, artist }) => {
+const AlbumList = ({ image, title, artist , onClick , isActive}) => {
   return (
-    <li className="li">
+    <li className={`li ${isActive? "active" : ""}`} onClick={onClick}>
       <div className="container">
         <div className="imageStyle">
           <img src={image} alt="image"/>

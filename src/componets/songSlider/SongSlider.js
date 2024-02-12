@@ -14,6 +14,12 @@ const SongSlider = () => {
 
   console.log(songs);
 
+  const onChangeMusic =(musicIndex)=>{
+    setCurrentSong(musicIndex)
+    
+    console.log(musicIndex);
+  }
+
   const nextSong = () => {
     setCurrentSong((prevSong) => (prevSong + 1) % songs.length);
   };
@@ -22,7 +28,6 @@ const SongSlider = () => {
     setCurrentSong((prevSong) => (prevSong - 1 + songs.length) % songs.length);
   };
 
-  console.log({ songs });
   return (
     <div>
       <div
@@ -78,6 +83,8 @@ const SongSlider = () => {
               title={playlist.title}
               image={playlist.image}
               artist={playlist.artist}
+              onClick={()=>onChangeMusic(index)}
+              isActive={index===currentSong}
             />
           ))}
         </ul>

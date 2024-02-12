@@ -7,6 +7,10 @@
   border-radius: 5px;
   margin: 10px;
 }
+.active{
+  border: 2px solid rgb(243, 239, 6);
+
+}
 .container {
   display: flex;
   flex-direction: row;
