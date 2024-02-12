@@ -26,10 +26,22 @@
                     "image": "https://ts11.tarafdari.com/contents/user782086/content-sound/screenshot_2206.png"
                 },
                 {
-                    "title": "Song ",
-                    "artist": "Artist",
-                    "url": "link",
-                    "image": "link"
+                    "title": "گل عروس ",
+                    "artist": "عارف",
+                    "url": "https://cdn-dl.music-single.com/music/single/1397/9/4/05%20Gole%20Arous.mp3",
+                    "image": "https://www.music-single.com/wp-content/uploads/2018/11/Aref-Marde-Ghabileh.jpg"
+                },
+                {
+                    "title": "سلام  ",
+                    "artist": "نوش آفرین",
+                    "url": "https://xx.parla-music.ir/archive/N/Nooshafarin/Nooshafarin%20-%20Haft%20Darya/06%20Salam.mp3",
+                    "image": "https://xx.parla-music.ir/archive/N/Nooshafarin/Nooshafarin%20-%20Haft%20Darya/Nooshafarin%20-%20Haft%20Darya.jpg"
+                },
+                {
+                    "title": "دلبر شیرین مهربون یارم ",
+                    "artist": "شهیاد",
+                    "url": "https://irsv.upmusics.com/AliBZ/Delbar%20Shirin%20(320).mp3",
+                    "image": "https://upmusics.com/wp-content/uploads/2023/02/Shahyad-.jpg"
                 }
             ]
         },
@@ -60,40 +72,64 @@
             "imageAlt": " آهنگ بندری",
             "songs": [
                 {
-                    "title": "Song",
-                    "artist": "Artist",
-                    "url": "link",
-                    "image": "link"
+                    "title": "ظهر تابستون",
+                    "artist": "ویسی بند",
+                    "url": "https://dls.music-fa.com/tagdl/downloads/Veysi%20Band%20-%20Zohre%20Tabestoon%20(320).mp3",
+                    "image": "https://music-fa.com/wp-content/uploads/2019/06/Veysi-Band84672049634705923658293659825.jpg"
                 },
                 {
-                    "title": "Song",
-                    "artist": "Artist",
-                    "url": "link",
-                    "image": "link"
+                    "title": "با چشات اگه نگام کنی",
+                    "artist": "علی دانیال",
+                    "url": "https://dl.musicdel.ir/Music/1400/04/ali_danial_ba_cheshat%20128.mp3",
+                    "image": "https://musicdel.ir/wp-content/uploads/2021/06/%D8%A8%D8%A7-%DA%86%D8%B4%D8%A7%D8%AA-%D8%A7%DA%AF%D9%87-%D9%86%DA%AF%D8%A7%D9%85-%DA%A9%D9%86%DB%8C.jpg"
                 },
                 {
-                    "title": "Song",
-                    "artist": "Artist",
-                    "url": "link",
-                    "image": "link"
+                    "title": "دختر بندر",
+                    "artist": "اندی ",
+                    "url": "https://dl.musiceto.com/Music/1400/6/Andy%20Dokhtare%20Bandar%20320%20.mp3?_=1",
+                    "image": "https://musiceto.com/wp-content/uploads/2021/09/030-300x300-1.jpg"
                 },
                 {
-                    "title": "Song",
-                    "artist": "Artist",
-                    "url": "link",
-                    "image": "link"
+                    "title": "امینه",
+                    "artist": "سندی و خشایار آذر",
+                    "url": "http://www.s4.topseda.org/93/11/25/edit/Sandy%20Ft.%20Khashayar%20Azar%20-%20Amine%20%5b320%5d.mp3",
+                    "image": "https://www.topseda.org/wp-content/uploads/2013/09/Sandy-Ft.-Khashayar-Azar-Amine.jpg"
                 },
                 {
-                    "title": "Song",
-                    "artist": "Artist",
-                    "url": "link",
-                    "image": "link"
+                    "title": "لیلا لیلا ابرو کمونی لیلا",
+                    "artist": "سروش",
+                    "url": "https://dls.sultanmusic.ir/music/1401/7/2/Soroush%20-%20Leila.mp3",
+                    "image": "https://musico.ir/wp-content/uploads/2021/11/Soroosh-Leyla-Musico.ir_.jpg"
                 },
                 {
-                    "title": "Song",
-                    "artist": "Artist",
-                    "url": "link",
-                    "image": "link"
+                    "title": "نازی جون",
+                    "artist": "شهرام کاشانی",
+                    "url": "http://s4.topseda.org/98/11/15/Shahram%20Kashani%20-%20Nazi%20Joon.mp3",
+                    "image": "https://www.topseda.org/wp-content/uploads/2020/02/Shahrum-Kashani-Be-Kasi-Nagoo-450x450.jpg"
+                },
+                {
+                    "title": "حلیمه(ریمیکس)",
+                    "artist": "سندی",
+                    "url": "http://up.radiojavan.org/download/3173874/Sandy%20&%20DjOsTaD%20-%20Halimeh%20(Remix).mp3",
+                    "image": "https://dl.popmelody.ir/music/1401/01/sandy_joomeye_veyli.jpg"
+                },
+                {
+                    "title": " هله دان دان هله یه دانه",
+                    "artist": "فرامرز آصف",
+                    "url": "http://dl.noostalgic.ir/dl/dl3/Heledon.mp3",
+                    "image": "https://nakamanmusic.com/wp-content/uploads/2017/12/%D9%81%D8%B1%D8%A7%D9%85%D8%B1%D8%B2-%D8%A2%D8%B5%D9%81-3.jpg"
+                },
+                {
+                    "title": " هدیه ایرون ریمیکس ",
+                    "artist": " سیاوش شمس ",
+                    "url": "http://dl.mokhtalefmusic.com/music/1400/01/25/DjSonami%20Remix/320/%23DjSonami_Remix-siavash-shams-hedyeh-iroon.mp3",
+                    "image": "https://mokhtalefmusic.com/wp-content/uploads/2021/04/unnamed-1-1-475x475.jpg"
+                },
+                {
+                    "title": "خدیجه",
+                    "artist": "ویسی بند",
+                    "url": "http://dl.pop-music.ir/music/1396/Shahrivar/Veysi%20Band%20-%20Khadije%20.mp3",
+                    "image": "https://dl.pop-music.ir/images/1396/Shahrivar/Veysi-Band-Khadije.jpg"
                 }
             ]
         },
@@ -103,48 +139,6 @@
             "image": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0LFs1ngwW0VAGTrc6UwjlQK26lllerFuteA&usqp=CAU",
             "imageAlt": "  آهنگ ترکی",
             "songs": [
-                {
-                    "title": "Song",
-                    "artist": "Artist",
-                    "url": "link",
-                    "image": "link"
-                },
-                {
-                    "title": "Song",
-                    "artist": "Artist",
-                    "url": "link",
-                    "image": "link"
-                },
-                {
-                    "title": "Song",
-                    "artist": "Artist",
-                    "url": "link",
-                    "image": "link"
-                },
-                {
-                    "title": "Song",
-                    "artist": "Artist",
-                    "url": "link",
-                    "image": "link"
-                },
-                {
-                    "title": "Song",
-                    "artist": "Artist",
-                    "url": "link",
-                    "image": "link"
-                },
-                {
-                    "title": "Song",
-                    "artist": "Artist",
-                    "url": "link",
-                    "image": "link"
-                },
-                {
-                    "title": "Song",
-                    "artist": "Artist",
-                    "url": "link",
-                    "image": "link"
-                },
                 {
                     "title": "Song",
                     "artist": "Artist",
@@ -192,59 +186,35 @@
             "imageAlt": "  آهنگ شمالی",
             "songs": [
                 {
+                    "title": "پادکست شاد مازندرانی",
+                    "artist": "دیجی سونامی",
+                    "url": "https://dl.evan-music.ir/music/1401/07/06/Podcast-Mazandarani%20-%20Dj-Sonami.mp3",
+                    "image": "https://evan-musics.ir/wp-content/uploads/2021/11/%D9%85%D8%A7%D8%B2%D9%86%DB%8C.jpg"
+                },
+                {
+                    "title": "ریمیکس تریبال مازندرانی",
+                    "artist": "دیجی سونامی",
+                    "url": "https://dl.evan-music.ir/music/1402/01/29/Padkast%20-%20Mazani.mp3",
+                    "image": "https://evan-musics.ir/wp-content/uploads/2021/11/%D9%85%D8%A7%D8%B2%D9%86%DB%8C.jpg"
+                },
+                {
+                    "title": " ریمیکس آهنگ های علی میررضایی",
+                    "artist": "علی میررضایی",
+                    "url": "https://dl.evan-music.ir/music/1402/01/29/Podcast-Mix%20-%20Ali-mirrezaei-Djamin.mp3",
+                    "image": "https://evan-musics.ir/wp-content/uploads/2021/11/%D9%85%D8%A7%D8%B2%D9%86%DB%8C.jpg"
+                },                {
                     "title": "گنگستر",
                     "artist": "مجید احمدی",
                     "url": "https://ups.music-fa.com/tagdl/6e41/Majid%20Ahmadi%20-%20Zibaye%20Man%20(320).mp3",
                     "image": "https://static.cdn.asset.aparat.cloud/avt/50600522-7703-b__9221.jpg?width=900&quality=90&secret=DpHylrteUeLLa4kBjMS24A"
                 },
                 {
-                    "title": "Song",
-                    "artist": "Artist",
-                    "url": "link",
-                    "image": "link"
-                },
-                {
-                    "title": "Song",
-                    "artist": "Artist",
-                    "url": "link",
-                    "image": "link"
-                },
-                {
-                    "title": "Song",
-                    "artist": "Artist",
-                    "url": "link",
-                    "image": "link"
-                },
-                {
-                    "title": "Song",
-                    "artist": "Artist",
-                    "url": "link",
-                    "image": "link"
-                },
-                {
-                    "title": "Song",
-                    "artist": "Artist",
-                    "url": "link",
-                    "image": "link"
-                },
-                {
-                    "title": "Song",
-                    "artist": "Artist",
-                    "url": "link",
-                    "image": "link"
-                },
-                {
-                    "title": "Song",
-                    "artist": "Artist",
-                    "url": "link",
-                    "image": "link"
-                },
-                {
-                    "title": "Song",
-                    "artist": "Artist",
-                    "url": "link",
-                    "image": "link"
+                    "title": "ریمیکس شاد مازندرانی قاسم آبادی",
+                    "artist": " دیجی ماهان",
+                    "url": "https://dl.evan-music.ir/music/1402/01/29/Dj-Mahan%20-%20Parti-Mazani.mp3",
+                    "image": "https://evan-musics.ir/wp-content/uploads/2021/11/%D9%85%D8%A7%D8%B2%D9%86%DB%8C.jpg"
                 }
+                
             ]
         }
     ]
