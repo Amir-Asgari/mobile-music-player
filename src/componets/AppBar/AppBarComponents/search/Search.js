@@ -7,7 +7,7 @@ import "react-h5-audio-player/lib/styles.css";
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
-  const [currentSongIndex, setCurrentSongIndex] = useState(-1); // Index of currently playing song
+  const [currentSongIndex, setCurrentSongIndex] = useState(-1); 
   const [currentSong, setCurrentSong] = React.useState(0);
 
   const handleSearch = (event) => {
@@ -15,6 +15,7 @@ const Search = () => {
     setSearchTerm(term);
     const results = searchSongs(term);
     setSearchResults(results);
+    console.log(searchResults);
   };
 
   const searchSongs = (term) => {
@@ -22,9 +23,13 @@ const Search = () => {
     let results = [];
     playlists.forEach((playlist) => {
       playlist.songs.forEach((song) => {
+        const title = song.title.toLowerCase().trim()
+        const artist = song.artist.toLowerCase().trim()
+        const tags = song.tags ? song.tags.toLowerCase().trim() : ''
         if (
-          song.title.toLowerCase().includes(term.toLowerCase()) ||
-          song.artist.toLowerCase().includes(term.toLowerCase())
+          title.includes(term.toLowerCase()) ||
+          tags.includes(term.toLowerCase()) ||
+          artist.includes(term.toLowerCase())
         ) {
           results.push(song);
         }
@@ -146,13 +151,13 @@ const Search = () => {
             {/* {index===currentSongIndex && (
               <div style={{display:'block', height:'500px',width :'100%' , position : 'relative'}}></div>
             )} */}
-            <AlbumList
-              title={song.title}
-              image={song.image}
-              artist={song.artist}
-              onClick={() => playSong(index)}
-              isActive={index === currentSongIndex}
-            />
+              <AlbumList
+                title={song.title}
+                image={song.image}
+                artist={song.artist}
+                onClick={() => playSong(index)}
+                isActive={index === currentSongIndex}
+              />
           </li>
         ))}
       </ul>
