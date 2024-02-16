@@ -1,23 +1,27 @@
-import React , {useState} from 'react'
+import React, { useState } from "react";
 import IconButton from "@mui/material/IconButton";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-import { red } from '@mui/material/colors';
+import { red } from "@mui/material/colors";
 
+const LikeButton = ({songId}) => {
+  const [liked, setliked] = useState(()=>{
+    return localStorage.getItem(songId)==="true"
+  });
 
-const LikeButton = () => {
-    const [liked, setliked] = useState(true)
+  const handleClickLike = (prevLiked ) => {
+    setliked((prevLiked) => !prevLiked);
 
-    const handleClickLike =(prevLiked)=>{
-        setliked(prevLiked=>!prevLiked)
-    }
-    // const redColor = red[50]
+        localStorage.setItem(songId , !liked);
+  
+  };
+  // const redColor = red[50]
   return (
-    <div >
-        <IconButton  onClick={handleClickLike} color={!liked? 'error': '#000'}>
-            <FavoriteIcon style={{height:'50px', width:'50px'}}/>
-        </IconButton>
+    <div>
+      <IconButton onClick={handleClickLike} color={!liked ? "error" : "#000"}>
+        <FavoriteIcon style={{ height: "50px", width: "50px" }} />
+      </IconButton>
     </div>
-  )
-}
+  );
+};
 
-export default LikeButton
+export default LikeButton;

@@ -62,7 +62,7 @@ const Sliders = ({ sliderData }) => {
           <Link to={`/album/${album.id}`} key={id}>
             <div>
               <img
-                style={{ width: "200px" }}
+                style={{ width: "200px" , height: "200px"}}
                 src={album.image}
                 alt={album.imageAlt}
               />

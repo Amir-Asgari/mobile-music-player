@@ -80,8 +80,10 @@ const SongSlider = () => {
           {songs.map((playlist, index) => (
             <AlbumList
               key={index}
+              songId={playlist.id}
               title={playlist.title}
               image={playlist.image}
+              // image={[{src , id}].find(item=>item.id===playlist.image).src}
               artist={playlist.artist}
               onClick={()=>onChangeMusic(index)}
               isActive={index===currentSong}
