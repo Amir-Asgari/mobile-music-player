@@ -83,6 +83,7 @@ const SongSlider = () => {
               songId={playlist.id}
               title={playlist.title}
               image={playlist.image}
+              url={playlist.url}
               // image={[{src , id}].find(item=>item.id===playlist.image).src}
               artist={playlist.artist}
               onClick={()=>onChangeMusic(index)}
