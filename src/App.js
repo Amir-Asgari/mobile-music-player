@@ -9,6 +9,7 @@ import MyMusicFy from "./componets/AppBar/AppBarComponents/myMusicFy/MyMusicFy";
 import Playlists from "./componets/AppBar/AppBarComponents/playLists/Playlists";
 import Search from "./componets/AppBar/AppBarComponents/search/Search";
 import Downloads from "./componets/AppBar/AppBarComponents/downloads/Downloads";
+import NotFoundPage from "./componets/NotFoundPage/NotFoundPage";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             //   <AlbumPlayingList {...props} albums={albumsData} />
             // )}
           />
+                    <Route path="/" component={NotFoundPage} />
         </Switch>
       </Router>
     </div>

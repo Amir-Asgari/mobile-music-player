@@ -49,7 +49,7 @@ export default function BottomAppBar() {
         <nav>
           <Toolbar>
           <Link to='/myMusicFy'>
-            <IconButton color="inherit" aria-label="open drawer" style={{display:"flex" , flexDirection:'column'}}>
+            <IconButton color="inherit" aria-label="open drawer" style={{display:"flex" , flexDirection:'column' , color:'white'}}>
               <PersonOutlineRoundedIcon sx={{ fontSize: 100 }} />
               <div>موزیکفای من</div>
             </IconButton>
@@ -57,7 +57,7 @@ export default function BottomAppBar() {
             <Box sx={{ flexGrow: 1 }} />
             <Link to='/playLists'>
 
-            <IconButton color="inherit" aria-label="open drawer" style={{display:"flex" , flexDirection:'column'}}>
+            <IconButton color="inherit" aria-label="open drawer" style={{display:"flex" , flexDirection:'column', color:'white'}}>
               <QueueMusicRoundedIcon sx={{ fontSize: 100 }} />
               <div>پلی لیست ها</div>
             </IconButton>
@@ -65,7 +65,7 @@ export default function BottomAppBar() {
             <Box sx={{ flexGrow: 1 }} />
             <Link to='/homePage'>
               <IconButton
-                style={{ width: "250px", height: "150px" , display:"flex" , flexDirection:'column' }}
+                style={{ width: "250px", height: "150px" , display:"flex" , flexDirection:'column' , color:'white'}}
                 color="inherit"
                 aria-label="add"
               >
@@ -75,14 +75,14 @@ export default function BottomAppBar() {
               </Link>
             <Box sx={{ flexGrow: 1 }} />
                 <Link to='/search'>
-                <IconButton color="inherit" style={{display:"flex" , flexDirection:'column'}}>
+                <IconButton color="inherit" style={{display:"flex" , flexDirection:'column', color:'white'}}>
               <SearchIcon sx={{ fontSize: 100 }} />
               <div>جستجو</div>
             </IconButton>
             </Link>
             <Box sx={{ flexGrow: 1 }} />
             <Link to='/downloads'>
-            <IconButton color="inherit" style={{display:"flex" , flexDirection:'column'}}>
+            <IconButton color="inherit" style={{display:"flex" , flexDirection:'column', color:'white'}}>
               <DownloadRoundedIcon sx={{ fontSize: 100 }} />
               <div>دانلودها</div>
             </IconButton>
