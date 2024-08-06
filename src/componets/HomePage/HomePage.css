@@ -1,16 +1,31 @@
-.body{
+.body {
   background-color: rgba(0, 0, 0, 0.833);
-height: max-content;
+  height: max-content;
 }
-.AdvertisingBox{
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    /* margin:  50px; */
+.AdvertisingBox {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* margin:  50px; */
 }
 
-.Sliders{
-    margin-top: 0;
-    background-color: rgba(33, 33, 33, 0.511);
+.Sliders {
+  margin-top: 0;
+  background-color: rgba(33, 33, 33, 0.511);
+  color: white;
+}
+
+.Slider  {
+  margin-top: 10px;
+  background-color: rgba(33, 33, 33, 0.511);
+  color: white;
+  width: 100% !important;
+}
+.slick-slide.slick-active.slick-current  {
+
+  width: 22px!important;
+}
+h1 {
+  width: 30px !important ;
 }

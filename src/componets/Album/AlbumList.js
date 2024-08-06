@@ -34,7 +34,7 @@ const AlbumList = ({
   };
 
   useEffect(() => {
-    const path = `C:\Users\mraas\Downloads${encodeURIComponent(title)}.mp3`;
+    const path = `C:\Users\Downloads${encodeURIComponent(title)}.mp3`;
     fetch(path)
       .then((response) => {
         if (response.ok) {
